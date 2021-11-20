@@ -11,10 +11,8 @@ services:
             - MYSQL_ROOT_PASSWORD
 
     crt_symfony_1:
-        build:
-            context: .
-            dockerfile: ./docker/php-fpm/Dockerfile
-        image: crt_symfony_1:lastest
+        image: linbis/crt_symfony_1:1.0
+        restart: always
         ports:
             - '8080:8080'
         depends_on:
