@@ -12,7 +12,7 @@ services:
 
     crt_symfony_1:
         image: linbis/crt_symfony_1:1.0
-        restart: always
+        container_name: crt_symfony_1
         ports:
             - '8080:8080'
         depends_on:
